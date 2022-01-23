@@ -8,6 +8,8 @@ noborder
 
 stacker
 
+systray
+
 ## Software
 alacritty
 
