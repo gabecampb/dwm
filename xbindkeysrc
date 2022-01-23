@@ -1,0 +1,14 @@
+"pactl set-sink-volume @DEFAULT_SINK@ +5000 && pactl set-sink-mute @DEFAULT_SINK@ false"
+   XF86AudioRaiseVolume
+
+"pactl set-sink-volume @DEFAULT_SINK@ -5000 && pactl set-sink-mute @DEFAULT_SINK@ false"
+   XF86AudioLowerVolume
+
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+   XF86AudioMute
+
+"~/.config/toggle-touch.sh"
+   XF86TouchpadToggle
+
+"scrot /home/gabrielc/Pictures/Screenshots/$n.png"
+	Print

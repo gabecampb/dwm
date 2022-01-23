@@ -1,0 +1,74 @@
+*{
+    background-light:#1c1c1c;
+    background-accent:#807F7F;
+    background-main:#0F0F0F;
+    text-main:#eeeeee;
+    text-light:#464646;
+	font: "IBM Plex Mono 10";
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window{
+    location:center;
+    anchor:center;
+    background-color: @background-main;
+    width:25%;
+}
+
+mainbox{
+	padding: 2;
+    background-color: inherit;
+}
+
+inputbar{
+    background-color: inherit;
+}
+
+prompt{
+    enabled:false;
+}
+
+entry{
+    padding:10px;
+    placeholder:"Search";
+    placeholder-color:@text-light;
+    color:white;
+    background-color: @background-light;
+    vertical-align:0.5;
+}
+
+listview{
+    background-color: @background-main;
+    lines:8;
+    columns: 1;
+}
+
+case-indicator{
+    enabled: false;
+}
+
+/* individual items in search results */
+element {
+    background-color: inherit;
+    color:@text-main;
+    padding:5px 5px;
+    orientation:horizontal;
+}
+
+element-icon{
+    size:30px;
+	background-color: inherit;
+}
+
+element selected{
+    background-color:@background-accent;
+}
+
+error-message{
+    background-color: inherit;
+    color:@highlight-main;
+}
