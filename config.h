@@ -2,6 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int gappx     = 4;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -24,7 +25,7 @@ static const char col_bg[]        = "#005577";
 static const char col_border[]        = "#005577";
 */
 
-static const char col_gray1[]		= "#0F0F0F";			// bg color of bar
+static const char col_gray1[]		= "#141817";			// bg color of bar
 static const char col_gray2[]       = "#444444";			// unselected client border color
 static const char col_gray3[]       = "#bbbbbb";			// unselected tag & status text color
 static const char col_gray4[]       = "#eeeeee";			// selected tag & title bar highlight text color
@@ -110,6 +111,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_minus,  setgaps,        {.i = -2 } },
+	{ MODKEY,                       XK_equal,  setgaps,        {.i = +2 } },
+	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
